@@ -2,7 +2,7 @@ import React from 'react';
 
 const UserOutput = props => {
     return (
-        <div style={{border:'1px solid green', margin:'5px auto'}}>
+        <div style={{ border: '1px solid green', margin: '5px auto' }}>
             <h1>user Name : {props.name}</h1>
             <p>Lorem ipsum netus suscipit scelerisque interdum suscipit curae volutpat, mattis tortor etiam mollis lacus massa rhoncus bibendum, donec hac mollis duis vitae donec volutpat ut at ut volutpat neque erat fermentum aptent quisque pellentesque.
 

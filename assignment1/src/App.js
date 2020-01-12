@@ -5,12 +5,12 @@ import UserOutput from './components/UserOutput/UserOutput';
 
 class App extends React.Component {
   state = {
-    userNames : ['Anirudh','Prerana']
+    userNames : ['Ogre','Magi']
   }
 
   nameChangeHandler = (event) => {
     this.setState({
-      userNames:[event.target.value,'Prerana']
+      userNames:[event.target.value,'Magi']
     })
   }
   render() {
