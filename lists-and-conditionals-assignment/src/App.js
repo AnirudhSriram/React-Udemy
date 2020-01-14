@@ -37,7 +37,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <input type="text" onChange={(event) => this.getLengthHandler(event)} value={this.state.stringText} />
-        <p>{this.state.length}</p>
+        {this.state.length >0 ?<p>{this.state.length}</p>:null}
         <Validation length={this.state.length} />
         {renderChars}
       </div>
