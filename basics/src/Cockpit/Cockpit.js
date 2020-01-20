@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import classes from './Cockpit.css'
 const Cockpit = (props) => {
+
+    useEffect(() => {
+        console.log('cockpit js useEffect');
+        setTimeout(() => console.log('cockpit js useeffect settimeout'), 1000)
+        return () => console.log('cockpit js cleaning up now')
+    }, [])
+
     const assignedClasses = [];
     let btnClass = '';
     if (props.showPersons) {
@@ -14,7 +21,7 @@ const Cockpit = (props) => {
     }
     return (
         <div className={classes.Cockpit}>
-            <h1>Hi, I'm a {props.name} App </h1>
+            {/* <h1>Hi, I'm a {props.name} App </h1> */}
             <p className={assignedClasses.join(' ')}>This is really working!</p>
             <button
                 className={btnClass}
@@ -23,4 +30,4 @@ const Cockpit = (props) => {
     )
 }
 
-export default Cockpit;
+export default React.memo(Cockpit);
