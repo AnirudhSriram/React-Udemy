@@ -1,7 +1,6 @@
-import React from 'react';
+import React,{PureComponent} from 'react';
 import Person from './Person/Person';
-
-class Persons extends React.Component {
+class Persons extends PureComponent {
     static getDerivedStateFromProps(props,state){
         console.log('Persons JS getDerivedStateFromProps')
         return state;
